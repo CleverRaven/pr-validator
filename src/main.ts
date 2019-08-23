@@ -6,8 +6,8 @@ async function run() {
     const description_regex = core.getInput('description-regex');
     core.debug(`Applying ${description_regex} to description string.`);
     const description = github.context!.payload!.pull_request!.body;
-    console.log('PR Description: $(description}');
-    
+    console.log('PR Description: ${description}');
+
     if (!description.match(new RegExp(description_regex))) {
         core.setFailed('Please fix your PR SUMMARY line to match ${description_regex}');
     } else {
