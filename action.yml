@@ -1,10 +1,12 @@
-name: 'Node 12 Template Action'
-description: 'Get started with Node actions'
-author: 'GitHub'
+name: 'PR SUMMARY validator'
+description: 'Validate that PR descriptions contain a matching SUMMARY entry,'
+author: 'KevinGranade'
 inputs:
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  description-regex:
+    description: 'Description regex to match'
+    required: true
+    default: '.*SUMMARY:.*'
 runs:
   using: 'node12'
   main: 'lib/main.js'
+  
