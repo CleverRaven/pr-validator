@@ -8,7 +8,7 @@ async function run() {
     const description = github.context!.payload!.pull_request!.body;
     console.log(`PR Description: ${description}`);
 
-    if (!description!.match(new RegExp(description_regex))) {
+    if (!description!.match(new RegExp(description_regex, 'i'))) {
         core.setFailed(`Please fix your PR SUMMARY line to match ${description_regex}`);
     } else {
         console.log('PR description contains valid SUMMARY line.');
