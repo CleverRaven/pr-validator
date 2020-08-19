@@ -6,6 +6,10 @@ inputs:
     description: 'Description regex to match'
     required: true
     default: '.*SUMMARY:.*'
+  description-regex-flags:
+    description: 'Flags for the description regex'
+    required: false
+    default: 'i'
 runs:
   using: 'node12'
   main: 'lib/main.js'
