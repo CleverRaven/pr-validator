@@ -20,15 +20,15 @@
   "author": "GitHub",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.13",
-    "@types/node": "^12.0.4",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.1.0",
     "jest": "^30.0.5",
-    "jest-circus": "^30.0.5",
+    "jest-circus": "latest",
     "ts-jest": "^29.4.0",
-    "typescript": "^3.5.1"
+    "typescript": "^5.8.3"
   }
 }
